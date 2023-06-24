@@ -1,4 +1,4 @@
-import { Given, When, Then } from '@wdio/cucumber-framework';
+import {Given, When, Then} from '@wdio/cucumber-framework';
 import HomePage from '../pageobjects/homePage.js';
 import SearchResultPage from '../pageobjects/searchResultPage.js';
 
@@ -10,7 +10,7 @@ Given('Chrome is open on my Android device', async function () {
     }
 });
 
-When('I navigate to {string} and the page is displayed' , async function (url) {
+When('I navigate to {string} and the page is displayed', async function (url) {
     await HomePage.navigateTo(url);
     await driver.pause(4000)
     await HomePage.getImgLogo.isDisplayedInViewport();
@@ -20,7 +20,7 @@ When('I navigate to {string} and the page is displayed' , async function (url) {
 Then('I enter {string} in the search field and click the search button', async function (string) {
     await HomePage.performSearch(string);
     await driver.pause(4000);
-    await SearchResultPage.searchResults.isDisplayed();
+    await SearchResultPage.searchResultsBtn.isDisplayed();
 });
 
 Then('I should see the number of search results', async function () {

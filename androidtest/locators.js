@@ -1,7 +1,7 @@
-const locators ={
+const locators = {
     acceptAndContinueBtn: '//android.widget.Button[@resource-id="com.android.chrome:id/terms_accept"]',
-    noThanksBtn: '//android.widget.Button[1]',
-    noThanksBtn2: '//android.view.ViewGroup/android.widget.Button[1]',
+    noThanksSyncBtn: '//android.widget.Button[1]',
+    noThanksChromeNotificationBtn: '//android.view.ViewGroup/android.widget.Button[1]',
     ebaySearchInput: '.android.widget.EditText',
     ebayImgLogo: '//android.view.View[@content-desc="eBay Logo"]/android.widget.Image',
     ebaySearchBtn: '//android.webkit.WebView//android.widget.Button[2]',

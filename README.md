@@ -1,7 +1,15 @@
 ## banco-del-sol-challenge
 ## Description
-This is a small piece of coding that resolve the problem proposed by the challenge. The same can be extended and improved.
-### How to run
+This is a small piece of coding that resolve the problem proposed by the challenge. The same can be extended and improved.  
+
+## Stack
+- Webdriverio
+- Cucumber
+- Appium
+- Javascript
+- Android Studio
+
+## How to run
 - Clone the repository  
 - Run **npm install**  
 - Install Android Studio  

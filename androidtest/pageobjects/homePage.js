@@ -6,13 +6,15 @@ class HomePage extends BasePage {
     get searchInput() {
         return $(locators.ebaySearchInput);
     }
-    get getImgLogo(){
+
+    get getImgLogo() {
         return $(locators.ebayImgLogo);
     }
 
     get searchButton() {
         return $(locators.ebaySearchBtn);
     }
+
     async performSearch(keyword) {
         await this.searchInput.isDisplayed();
         await this.searchInput.setValue(keyword);
